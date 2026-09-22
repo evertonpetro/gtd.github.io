@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
+import { HashRouter, Navigate, Route, Routes } from 'react-router'
 import Header from '@/components/layout/Header'
 import MobileBottomNav from '@/components/layout/MobileBottomNav'
 import ReviewWizardBanner from '@/components/layout/ReviewWizardBanner'
@@ -28,7 +28,7 @@ const App = () => {
   useBootEngine()
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex h-dvh min-h-dvh flex-col md:flex-row">
         <Sidebar />
         <div className="flex flex-1 flex-col overflow-hidden">
@@ -57,7 +57,7 @@ const App = () => {
         <TaskDetailPanel />
         <ProjectDetailPanel />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
