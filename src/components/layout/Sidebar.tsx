@@ -15,7 +15,7 @@ const Sidebar = () => {
       style={{ paddingTop: 'calc(0.75rem + env(safe-area-inset-top))' }}
     >
       <div className="mb-4 flex items-center gap-2.5 px-2 py-1">
-        <img src="/gtd.svg" alt="GTD Logo" className="h-7 w-7" />
+        <img src={`${import.meta.env.BASE_URL}gtd.svg`} alt="GTD Logo" className="h-7 w-7" />
         <span className="text-base font-bold tracking-tight text-gray-900">GTD</span>
       </div>
       <button

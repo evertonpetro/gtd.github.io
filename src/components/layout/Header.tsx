@@ -19,7 +19,7 @@ const Header = () => {
       }}
     >
       <div className="flex h-14 items-center gap-2.5 px-4">
-        <img src="/gtd.svg" alt="GTD Logo" className="h-6 w-6 md:hidden" />
+        <img src={`${import.meta.env.BASE_URL}gtd.svg`} alt="GTD Logo" className="h-6 w-6 md:hidden" />
         <h1 className="text-lg font-medium text-gray-900">{current?.label ?? 'GTD'}</h1>
       </div>
       {showFilters && <FilterBar />}
