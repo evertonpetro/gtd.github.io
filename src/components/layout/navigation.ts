@@ -32,10 +32,10 @@ export const SECONDARY_NAV_ITEMS: NavItem[] = [
   { to: '/scheduled', label: 'Agendadas', icon: CalendarClock },
   { to: '/someday', label: 'Algum Dia', icon: Archive },
   { to: '/reference', label: 'Referência', icon: BookOpen },
-  { to: '/manual', label: 'Manual GTD', icon: BookOpenCheck },
   { to: '/logbook', label: 'Registro', icon: History },
   { to: '/trash', label: 'Lixeira', icon: Trash2 },
   { to: '/settings', label: 'Configurações', icon: Settings },
+  { to: '/manual', label: 'Manual GTD', icon: BookOpenCheck },
 ]
 
 export const NAV_ITEMS: NavItem[] = [...PRIMARY_NAV_ITEMS, ...SECONDARY_NAV_ITEMS]

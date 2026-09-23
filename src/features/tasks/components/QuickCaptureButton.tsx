@@ -1,8 +1,15 @@
 import { Plus } from 'lucide-react'
+import { useLocation } from 'react-router'
 import { useUIStore } from '@/store/uiStore'
 
 const QuickCaptureButton = () => {
+  const location = useLocation()
   const openQuickCapture = useUIStore((state) => state.openQuickCapture)
+
+  const isManualPage = location.pathname === '/manual' || location.pathname.startsWith('/manual/')
+  if (isManualPage) {
+    return null
+  }
 
   return (
     <button
