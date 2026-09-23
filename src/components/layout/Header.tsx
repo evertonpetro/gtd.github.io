@@ -8,7 +8,9 @@ const FILTERABLE_PATHS = ['/next', '/waiting', '/scheduled', '/someday', '/focus
 const Header = () => {
   const location = useLocation()
   const isReviewActive = useWeeklyReviewStore((state) => state.isActive)
-  const current = NAV_ITEMS.find((item) => item.to === location.pathname)
+  const current = NAV_ITEMS.find(
+    (item) => item.to === location.pathname || (item.to !== '/' && location.pathname.startsWith(`${item.to}/`)),
+  )
   const showFilters = FILTERABLE_PATHS.includes(location.pathname)
 
   return (

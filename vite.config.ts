@@ -6,7 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/gtd.github.io/',
+  base: '/gtd/',
   plugins: [
     react(),
     tailwindcss(),
@@ -22,8 +22,8 @@ export default defineConfig({
         short_name: 'GTD',
         description: 'Gerenciador de Tarefas GTD Offline-First',
         lang: 'pt-BR',
-        start_url: '/gtd.github.io/',
-        scope: '/gtd.github.io/',
+        start_url: '/gtd/',
+        scope: '/gtd/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#43649c',

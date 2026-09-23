@@ -1,6 +1,7 @@
 import {
   Archive,
   BookOpen,
+  BookOpenCheck,
   CalendarClock,
   Clock,
   FolderKanban,
@@ -31,6 +32,7 @@ export const SECONDARY_NAV_ITEMS: NavItem[] = [
   { to: '/scheduled', label: 'Agendadas', icon: CalendarClock },
   { to: '/someday', label: 'Algum Dia', icon: Archive },
   { to: '/reference', label: 'Referência', icon: BookOpen },
+  { to: '/manual', label: 'Manual GTD', icon: BookOpenCheck },
   { to: '/logbook', label: 'Registro', icon: History },
   { to: '/trash', label: 'Lixeira', icon: Trash2 },
   { to: '/settings', label: 'Configurações', icon: Settings },

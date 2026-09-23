@@ -10,6 +10,7 @@ import QuickCaptureModal from '@/features/tasks/components/QuickCaptureModal'
 import TaskDetailPanel from '@/features/tasks/components/TaskDetailPanel'
 import { useGlobalCaptureShortcut } from '@/hooks/useKeyboard'
 import FocusPage from '@/pages/FocusPage'
+import GuidePage from '@/pages/GuidePage'
 import InboxPage from '@/pages/InboxPage'
 import LogbookPage from '@/pages/LogbookPage'
 import NextActionsPage from '@/pages/NextActionsPage'
@@ -45,6 +46,8 @@ const App = () => {
               <Route path="/focus" element={<FocusPage />} />
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/reference" element={<ReferencePage />} />
+              <Route path="/manual" element={<GuidePage />} />
+              <Route path="/manual/:topicId" element={<GuidePage />} />
               <Route path="/logbook" element={<LogbookPage />} />
               <Route path="/trash" element={<TrashPage />} />
               <Route path="/settings" element={<SettingsPage />} />
